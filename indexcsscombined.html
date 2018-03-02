@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>History of the Internet Timeline</title>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+</head>
+<style>
+h1 {
+	font-size:125px;
+	font-weight:10px;
+	font-style:italic;
+	color:orange;
+	text-align:center;
+	font-family:'Sofia';
+}
+body {
+	text-align:center;
+	font-size:30px;
+}
+ul {
+	list-style-type:none;
+	line-height:45px;
+}
+button {
+	background-color: #0000ff;
+	color:white;
+	white-space:nowrap;
+}
+#extraControls {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+	display:none;
+}
+#extraControls2 {
+	width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+	display:none;
+}
+#extraControls3 {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+	display:none;
+}
+#extraControls4 {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+	display:none;
+}
+#extraControls5 {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+	display:none;
+}
+html {
+	background-color:#ff0000;
+}
+</style>
+<body>
+<h1>History of the Internet</h1>
+<ul>
+<li><button id="1950sbutton" onclick="myFunction()" autofocus>1950s</button></li>
+<div id="extraControls" class="hidden">
+	<ul id="1950s">
+	<li>1957: U.S. forms the Advanced Research Projects Agency (ARPA) in response to the USSR launching Sputnik.</li>
+	<li><img height="180px" width="210px" src="https://lh3.googleusercontent.com/QqRBEGorBhv0dSOWTbVl4KCR9pJGuDvmeqTyAClXR9hYgMWoZlO0jW-N626-O1M83tFegg=s136"></li>
+	</ul>
+</div>
+<hr>
+<li id="1960s"><button id="1960sbutton" onclick="myFunction2()" style=background-color:#ff6600>1960s</button></li>
+<div id="extraControls2" class="hidden">
+	<ul id="1960s">
+	<li>1962: Licklider writes about a "galactic web" able to access information in electronic form.</li>
+	<li>1965: First computer to computer connection.</li>
+	<li>1969: ARPANET first established.</li>
+	<li><img height="180px" width="300px" src="https://lh3.googleusercontent.com/e-UvL1RMXNoueT7W0aQi4C1fcZUvxG3OkjkDN1GxLW0OJ7tVmOJYjuD6rVd7P75nZe6bdA=s170"></li>
+	</ul>
+</div>
+<hr>
+<li id="1970s"><button id="1970sbutton" onclick="myFunction3()">1970s</button></li>
+<div id="extraControls3" class="hidden">
+	<ul>
+	<li>1972: 23 hosts on the network, 50 KB/s. Ray Tomlinson created email.</li>
+	<li>1973: TCP/IP is created.</li>
+	<li><img height="150px" width="200px" src="https://lh3.googleusercontent.com/wgYY0GTQ8z3J4sajeLU7FUrCEVK1kp2Fj4wy9RTeBDlHlHGIlRuaJ1rMgCsL6G1ikEKP=s85"></li>
+	<li>1974: TCP/IP is implemented.</li>
+	</ul>
+</div>
+<hr>
+<li id="1980s"><button id="1980sbutton" onclick="myFunction5()" style=background-color:#ff6600>1980s</button></li>
+<div id="extraControls5" class="hidden">
+	<ul>
+	<li>1981: The computer science network is founded.</li>
+	<li><img height="180px" width="210px" src="https://lh3.googleusercontent.com/CMRUpWLeR8FUyU_SQG5CAaek-LSo2F7PQA-wdiHSlAyCxfvxDXmDfR50gNkAlsRi1Y3jXHs=s129"></li>
+	<li>1981: ARPANET and the CSNET become cross-communicable.</li>
+	<li>1983: DNS took hold and removed the use for ARPANET and CSNET, making TCP/IP.</li>
+	<li>1985: First T-1 cable allowing speeds of 1.5 MB.</li>
+	<li>1989: World Wide Web was created by Time Berners-Lee.</li>
+
+	</ul>
+</div>
+<hr>
+<li id="1990s"><button id="1990sbutton" onclick="myFunction4()">1990s</button></button></li>
+<div id="extraControls4">
+	<ul>
+	<li>1991: T-3 lines are implemented, allowing speeds of up to 45 MB/s.</li>
+	<li>1991: CSNET became disused NREN rose (National research and education network).</li>
+	<li>1995: Moore's law became realized (computer chips will double in power and half in price every 18 months).</li>
+	<li>1995: YAHOO! became incorporated.</li>
+	<li><img height="150px" width="200px" src="https://lh3.googleusercontent.com/R5DqsRRGcu3vNNXhneoOfBfYU-5ePJNB8WJwZCI5e_jqpvHpjfoTUwLF8PBfJI7_JLBPRA=s163"></li>
+	<li>1998: Satnet became implemented.</li>
+	</ul>
+</div>
+<hr>
+</ul>
+<script>
+alert("Thank you for viewing this group's History of the Internet Timeline!");
+function myFunction() {
+    var x = document.getElementById("extraControls");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+$(document).ready(function() {
+	$("div#extraControls").hide();
+});
+$(document).ready(function() {
+	$("div#extraControls2").hide();
+});
+$(document).ready(function() {
+	$("div#extraControls3").hide();
+});
+$(document).ready(function() {
+	$("div#extraControls4").hide();
+});
+$(document).ready(function() {
+	$("div#extraControls5").hide();
+});
+function myFunction2() {
+    var x = document.getElementById("extraControls2");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+function myFunction3() {
+    var x = document.getElementById("extraControls3");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+function myFunction4() {
+    var x = document.getElementById("extraControls4");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+function myFunction5() {
+    var x = document.getElementById("extraControls5");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
+</body>
+</html>
